@@ -45,8 +45,8 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass'
-gem "font-awesome-rails"
+#gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass'
+#gem "font-awesome-rails"
 gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
 gem 'json'
 

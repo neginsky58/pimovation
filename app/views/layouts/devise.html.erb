@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pimovation</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <meta name="MobileOptimized" content="320">
+    <link href="/assets/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/uniform.default.css" rel="stylesheet" type="text/css"/>
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link rel="stylesheet" type="text/css" href="/assets/select2_metro.css" />
+    <!-- END PAGE LEVEL SCRIPTS -->
+    <!-- BEGIN THEME STYLES -->
+    <link href="/assets/style-metronic.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/style.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/style-responsive.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/plugins.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+    <link href="/assets/login-soft.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/custom.css" rel="stylesheet" type="text/css"/>
+    <!-- END THEME STYLES -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <%= csrf_meta_tags %>
+  </head>
+  <body class="login">
+    <div class="logo">
+      <img src="/assets/logo-big.png" alt="" />
+    </div>
+
+    <%if current_user%>
+      <%= link_to "logout", destroy_user_session_path, :method => :delete %>
+    <%end%>
+    <%= yield %>
+
+    <div class="copyright">
+      2013 &copy; Metronic - Admin Dashboard Template.
+    </div>
+
+
+    <script src="/assets/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="/assets/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <script src="/assets/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/assets/twitter-bootstrap-hover-dropdown.min.js" type="text/javascript" ></script>
+    <script src="/assets/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="/assets/jquery.blockui.min.js" type="text/javascript"></script>
+    <script src="/assets/jquery.cookie.min.js" type="text/javascript"></script>
+    <script src="/assets/jquery.uniform.min.js" type="text/javascript" ></script>
+    <!-- END CORE PLUGINS -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <script src="/assets/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/assets/jquery.backstretch.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/assets/select2.min.js"></script>
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="/assets/app.js" type="text/javascript"></script>
+    <script src="/assets/login-soft.js" type="text/javascript"></script>
+    <!-- END PAGE LEVEL SCRIPTS -->
+    <script>
+      jQuery(document).ready(function() {
+        App.init();
+        Login.init();
+      });
+    </script>
+  </body>
+</html>
