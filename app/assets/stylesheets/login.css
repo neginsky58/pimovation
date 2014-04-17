@@ -4,7 +4,7 @@ Login page
 
 /* logo page */
 .login {
-  background-color: #eeefff !important;
+  background-color: #ffffff !important;
 }
 
 .login .logo {
@@ -15,7 +15,7 @@ Login page
 }  
 
 .login .content {
-  background-color:#fff; 
+  background-color:#f98b24;
   width: 360px;
   margin: 0 auto; 
   margin-bottom: 0px;
@@ -63,7 +63,7 @@ Login page
 }
 
 .login .content .form-actions {
-  background-color: #fff;
+  background-color: #f98b24;
   clear: both;
   border: 0px;
   border-bottom: 1px solid #eee;
