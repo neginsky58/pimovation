@@ -5,8 +5,16 @@ Pimovation::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'projects#index'
+  root 'mahheks#profile'
 
+  resources :mahheks do
+    collection do
+      get :profile
+      get :dashboard
+      get :welcome
+      get :project_detail
+    end
+  end
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
