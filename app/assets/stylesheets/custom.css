@@ -1,1 +1,96 @@
-/* here you can put your own css to customize and override the theme */
+.tools {}
+.tools a {
+  color: #fff;
+}
+
+.dahboard-mess-body {
+  height: 90px;
+  overflow: auto;
+}
+
+.dashboard-upload-doc {}
+.dashboard-upload-doc .preview {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  background: #eee;
+}
+
+.dashboard-upload-doc .preview img {
+  max-width: 100%;
+  height: auto;
+}
+
+.dashdoard-sidebar-menu {
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.dashdoard-sidebar-menu ul {
+  padding-left: 20px;
+}
+
+.dashdoard-sidebar-menu ul li {
+  list-style: square;
+  padding: 10px 0;
+}
+
+.profile-img  {
+}
+.profile-img .profile-img-box {
+  display: block;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.project-list-btn {
+  margin: 20px;
+}
+
+.header .hor-menu .hor-menu-search-form-toggler {
+  background: none;
+  position: relative;
+}
+
+.header .hor-menu .hor-menu-search-form-toggler:before {
+  content: "Search";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.header .search-form {
+  width: 200px;
+  margin: 3px 0;
+  float: left;
+}
+
+.header .search-form .form-control {
+  border: 0;
+}
+
+
+.page-content-sub {
+  padding: 30px;
+  background: #fff;
+  min-height: 760px;
+}
+
+.project-list {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 20px;
+  height: 100px;
+  overflow: auto;
+}
+
+.welcome-box {
+  margin: 50px 0;
+}
+
+.table-stackeholder {}
+.table-stackeholder tr > td {
+  vertical-align: middle;
+}

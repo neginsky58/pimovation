@@ -132,6 +132,17 @@
         </a>
       </li>
     </ul>
+
+    <!-- Dashboard Sidebar Menu -->
+    <div class="dashdoard-sidebar-menu">
+      <h4>Action</h4>
+      <ul>
+        <li><a href="#">Update Project</a></li>
+        <li><a href="#">Project Report Dashboard</a></li>
+        <li><a href="#">Project Change Request</a></li>
+        <li><a href="#">Unlock Ealier Phase</a></li>
+      </ul>
+    </div>
   </div>
   <!-- END BEGIN HORIZONTAL MENU PAGE SIDEBAR -->
   <!-- BEGIN PAGE -->
@@ -145,7 +156,7 @@
             <h4 class="modal-title">Modal title</h4>
           </div>
           <div class="modal-body">
-							Widget settings form goes here
+            Widget settings form goes here
           </div>
           <div class="modal-footer">
             <button type="button" class="btn blue">Save changes</button>
@@ -157,7 +168,6 @@
       <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
-    <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
     <!-- BEGIN STYLE CUSTOMIZER -->
     <div class="theme-panel hidden-xs hidden-sm clearfix">
       <a href="#" class="btn dark pull-right"><i class="icon-plus"></i> New Project</a>
@@ -194,6 +204,9 @@
           </li>
           <li><a href="#">Project Name</a></li>
         </ul>
+        <p class="text-right">
+          <strong>Project Manager :</strong> <a href="#">John Doe</a>
+        </p>
         <!-- END PAGE TITLE & BREADCRUMB-->
       </div>
     </div>
@@ -202,68 +215,357 @@
 
     <div class="row">
       <div class="col-md-6">
-        <!-- BEGIN SAMPLE TABLE PORTLET-->
+        <!-- Portlet Anouncements -->
         <div class="portlet box yellow">
           <div class="portlet-title">
-            <div class="caption"><i class="icon-cogs"></i>Simple Table</div>
-            <div class="tools">
-              <a href="javascript:;" class="collapse"></a>
-              <a href="#portlet-config" data-toggle="modal" class="config"></a>
-              <a href="javascript:;" class="reload"></a>
-              <a href="javascript:;" class="remove"></a>
+            <div class="caption"><i class="icon-bell"></i>Recent Anouncements</div>
+            <div class="actions">
+              <div class="btn-group">
+                <a class="btn btn-sm default" href="#" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                  Filter By
+                  <i class="icon-angle-down"></i>
+                </a>
+                <div class="dropdown-menu hold-on-click dropdown-checkboxes pull-right">
+                  <label><input type="checkbox" /> Finance</label>
+                  <label><input type="checkbox" checked="" /> Membership</label>
+                  <label><input type="checkbox" /> Customer Support</label>
+                  <label><input type="checkbox" checked="" /> HR</label>
+                  <label><input type="checkbox" /> System</label>
+                </div>
+              </div>
             </div>
           </div>
           <div class="portlet-body">
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th class="hidden-480">Username</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td class="hidden-480">makr124</td>
-                  <td><span class="label label-success">Approved</span></td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Jacob</td>
-                  <td>Nilson</td>
-                  <td class="hidden-480">jac123</td>
-                  <td><span class="label label-info">Pending</span></td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Larry</td>
-                  <td>Cooper</td>
-                  <td class="hidden-480">lar</td>
-                  <td><span class="label label-warning">Suspended</span></td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Sandy</td>
-                  <td>Lim</td>
-                  <td class="hidden-480">sanlim</td>
-                  <td><span class="label label-danger">Blocked</span></td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="scroller" style="height: 300px;" data-always-visible="1" data-rail-visible="0">
+              <ul class="feeds">
+                <li>
+                  <div class="col1">
+                    <div class="cont">
+                      <div class="cont-col1">
+                        <div class="label label-sm label-info">
+                          <i class="icon-check"></i>
+                        </div>
+                      </div>
+                      <div class="cont-col2">
+                        <div class="desc">
+                          You have 4 pending tasks.
+                          <span class="label label-sm label-warning ">
+                            Take action
+                            <i class="icon-share-alt"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col2">
+                    <div class="date">
+                      Just now
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="col1">
+                      <div class="cont">
+                        <div class="cont-col1">
+                          <div class="label label-sm label-success">
+                            <i class="icon-bar-chart"></i>
+                          </div>
+                        </div>
+                        <div class="cont-col2">
+                          <div class="desc">
+                            Finance Report for year 2013 has been released.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col2">
+                      <div class="date">
+                        20 mins
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <div class="col1">
+                    <div class="cont">
+                      <div class="cont-col1">
+                        <div class="label label-sm label-danger">
+                          <i class="icon-user"></i>
+                        </div>
+                      </div>
+                      <div class="cont-col2">
+                        <div class="desc">
+                          You have 5 pending membership that requires a quick review.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col2">
+                    <div class="date">
+                      24 mins
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="col1">
+                    <div class="cont">
+                      <div class="cont-col1">
+                        <div class="label label-sm label-info">
+                          <i class="icon-shopping-cart"></i>
+                        </div>
+                      </div>
+                      <div class="cont-col2">
+                        <div class="desc">
+                          New order received with <span class="label label-sm label-success">Reference Number: DR23923</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col2">
+                    <div class="date">
+                      30 mins
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="col1">
+                    <div class="cont">
+                      <div class="cont-col1">
+                        <div class="label label-sm label-success">
+                          <i class="icon-user"></i>
+                        </div>
+                      </div>
+                      <div class="cont-col2">
+                        <div class="desc">
+                          You have 5 pending membership that requires a quick review.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col2">
+                    <div class="date">
+                      24 mins
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="col1">
+                    <div class="cont">
+                      <div class="cont-col1">
+                        <div class="label label-sm label-default">
+                          <i class="icon-bell-alt"></i>
+                        </div>
+                      </div>
+                      <div class="cont-col2">
+                        <div class="desc">
+                          Web server hardware needs to be upgraded.
+                          <span class="label label-sm label-default ">Overdue</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col2">
+                    <div class="date">
+                      2 hours
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="col1">
+                      <div class="cont">
+                        <div class="cont-col1">
+                          <div class="label label-sm label-default">
+                            <i class="icon-briefcase"></i>
+                          </div>
+                        </div>
+                        <div class="cont-col2">
+                          <div class="desc">
+                            IPO Report for year 2013 has been released.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col2">
+                      <div class="date">
+                        20 mins
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <div class="col1">
+                    <div class="cont">
+                      <div class="cont-col1">
+                        <div class="label label-sm label-info">
+                          <i class="icon-check"></i>
+                        </div>
+                      </div>
+                      <div class="cont-col2">
+                        <div class="desc">
+                          You have 4 pending tasks.
+                          <span class="label label-sm label-warning ">
+                            Take action
+                            <i class="icon-share-alt"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col2">
+                    <div class="date">
+                      Just now
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="col1">
+                      <div class="cont">
+                        <div class="cont-col1">
+                          <div class="label label-sm label-danger">
+                            <i class="icon-bar-chart"></i>
+                          </div>
+                        </div>
+                        <div class="cont-col2">
+                          <div class="desc">
+                            Finance Report for year 2013 has been released.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col2">
+                      <div class="date">
+                        20 mins
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <div class="col1">
+                    <div class="cont">
+                      <div class="cont-col1">
+                        <div class="label label-sm label-default">
+                          <i class="icon-user"></i>
+                        </div>
+                      </div>
+                      <div class="cont-col2">
+                        <div class="desc">
+                          You have 5 pending membership that requires a quick review.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col2">
+                    <div class="date">
+                      24 mins
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="col1">
+                    <div class="cont">
+                      <div class="cont-col1">
+                        <div class="label label-sm label-info">
+                          <i class="icon-shopping-cart"></i>
+                        </div>
+                      </div>
+                      <div class="cont-col2">
+                        <div class="desc">
+                          New order received with <span class="label label-sm label-success">Reference Number: DR23923</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col2">
+                    <div class="date">
+                      30 mins
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="col1">
+                    <div class="cont">
+                      <div class="cont-col1">
+                        <div class="label label-sm label-success">
+                          <i class="icon-user"></i>
+                        </div>
+                      </div>
+                      <div class="cont-col2">
+                        <div class="desc">
+                          You have 5 pending membership that requires a quick review.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col2">
+                    <div class="date">
+                      24 mins
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="col1">
+                    <div class="cont">
+                      <div class="cont-col1">
+                        <div class="label label-sm label-warning">
+                          <i class="icon-bell-alt"></i>
+                        </div>
+                      </div>
+                      <div class="cont-col2">
+                        <div class="desc">
+                          Web server hardware needs to be upgraded.
+                          <span class="label label-sm label-default ">Overdue</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col2">
+                    <div class="date">
+                      2 hours
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="col1">
+                      <div class="cont">
+                        <div class="cont-col1">
+                          <div class="label label-sm label-info">
+                            <i class="icon-briefcase"></i>
+                          </div>
+                        </div>
+                        <div class="cont-col2">
+                          <div class="desc">
+                            IPO Report for year 2013 has been released.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col2">
+                      <div class="date">
+                        20 mins
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="scroller-footer">
+              <div class="pull-right">
+                <a href="#">See All Records <i class="m-icon-swapright m-icon-gray"></i></a> &nbsp;
+              </div>
+            </div>
           </div>
         </div>
-        <!-- END SAMPLE TABLE PORTLET-->
+        <!-- /End Portlet Anouncement/ -->
       </div>
       <div class="col-md-6">
         <!-- BEGIN BORDERED TABLE PORTLET-->
         <div class="portlet box yellow">
           <div class="portlet-title">
-            <div class="caption"><i class="icon-coffee"></i>Bordered Table</div>
+            <div class="caption"><i class="icon-info"></i> Workflow Alert</div>
             <div class="tools">
               <a href="javascript:;" class="collapse"></a>
               <a href="#portlet-config" data-toggle="modal" class="config"></a>
@@ -275,47 +577,307 @@
             <table class="table table-bordered table-hover">
               <thead>
                 <tr>
-                  <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th class="hidden-480">Username</th>
-                  <th>Status</th>
+                  <th>Alert Name</th>
+                  <th>Project</th>
+                  <th>Type</th>
+                  <th>Priority</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>1</td>
+                  <td>New Risk Create</td>
                   <td>Mark</td>
-                  <td>Otto</td>
-                  <td class="hidden-480">makr124</td>
+                  <td>Node</td>
                   <td><span class="label label-success">Approved</span></td>
                 </tr>
                 <tr>
-                  <td>2</td>
+                  <td>New Risk Create</td>
                   <td>Jacob</td>
-                  <td>Nilson</td>
-                  <td class="hidden-480">jac123</td>
-                  <td><span class="label label-info">Pending</span></td>
+                  <td>Approved</td>
+                  <td><span class="label label-info">High</span></td>
                 </tr>
                 <tr>
-                  <td>3</td>
+                  <td>New Risk Create</td>
                   <td>Larry</td>
-                  <td>Cooper</td>
-                  <td class="hidden-480">lar</td>
+                  <td>Endosemen</td>
                   <td><span class="label label-warning">Suspended</span></td>
                 </tr>
                 <tr>
-                  <td>3</td>
+                  <td>New Risk Create</td>
                   <td>Sandy</td>
                   <td>Lim</td>
-                  <td class="hidden-480">sanlim</td>
-                  <td><span class="label label-danger">Blocked</span></td>
+                  <td><span class="label label-danger">Low</span></td>
+                </tr>
+                <tr>
+                  <td>New Risk Create</td>
+                  <td>Mark</td>
+                  <td>Node</td>
+                  <td><span class="label label-success">Approved</span></td>
+                </tr>
+                <tr>
+                  <td>New Risk Create</td>
+                  <td>Jacob</td>
+                  <td>Approved</td>
+                  <td><span class="label label-info">High</span></td>
+                </tr>
+                <tr>
+                  <td>New Risk Create</td>
+                  <td>Larry</td>
+                  <td>Endosemen</td>
+                  <td><span class="label label-warning">Suspended</span></td>
+                </tr>
+                <tr>
+                  <td>New Risk Create</td>
+                  <td>Sandy</td>
+                  <td>Lim</td>
+                  <td><span class="label label-danger">Low</span></td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
         <!-- END BORDERED TABLE PORTLET-->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="portlet box yellow">
+          <div class="portlet-title">
+            <div class="caption"><i class="icon-info"></i> Assigned Actions/Task</div>
+            <div class="tools">
+              <a href="javascript:;" class="collapse"></a>
+              <a href="#portlet-config" data-toggle="modal" class="config"></a>
+              <a href="javascript:;" class="reload"></a>
+              <a href="javascript:;" class="remove"></a>
+            </div>
+          </div>
+          <div class="portlet-body">
+            <table class="table table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th>Action Task Name</th>
+                  <th>Project</th>
+                  <th>Due</th>
+                  <th>%</th>
+                  <th>Assigned</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Hire Software Develop</td>
+                  <td>PIMS</td>
+                  <td>15/12/12</td>
+                  <td>100%</td>
+                  <td>Resources Costs</td>
+                </tr>
+                <tr>
+                  <td>Hire Software Develop</td>
+                  <td>PIMS</td>
+                  <td>15/12/12</td>
+                  <td>100%</td>
+                  <td>Resources Costs</td>
+                </tr>
+                <tr>
+                  <td>Hire Software Develop</td>
+                  <td>PIMS</td>
+                  <td>15/12/12</td>
+                  <td>100%</td>
+                  <td>Resources Costs</td>
+                </tr>
+                <tr>
+                  <td>Hire Software Develop</td>
+                  <td>PIMS</td>
+                  <td>15/12/12</td>
+                  <td>100%</td>
+                  <td>Resources Costs</td>
+                </tr>
+                <tr>
+                  <td>Hire Software Develop</td>
+                  <td>PIMS</td>
+                  <td>15/12/12</td>
+                  <td>100%</td>
+                  <td>Resources Costs</td>
+                </tr>
+                <tr>
+                  <td>Hire Software Develop</td>
+                  <td>PIMS</td>
+                  <td>15/12/12</td>
+                  <td>100%</td>
+                  <td>Resources Costs</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="portlet box red">
+          <div class="portlet-title">
+            <div class="caption">
+              <i class="icon-envelope"></i> Messages
+            </div>
+            <div class="tools">
+              <a href="#">New Message</a>
+            </div>
+          </div>
+          <div class="portlet-body form">
+            <form role="form">
+              <div class="form-body">
+                <div class="form-group">
+                  <label>Select Messages</label>
+                  <select class="form-control input-lg">
+                    <option>Message 1</option>
+                    <option>Message 2</option>
+                    <option>Message 3</option>
+                    <option>Message 4</option>
+                    <option>Message 5</option>
+                  </select>
+                </div>
+                <div class="dahboard-mess-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus lorem sit amet tristique commodo.</p>
+                </div>
+              </div>
+              <div class="form-actions right">
+                <button type="button" class="btn default">Delete</button>
+                <button type="submit" class="btn yellow">Forward</button>
+                <button type="submit" class="btn green">Reply</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="portlet box yellow">
+          <div class="portlet-title">
+            <div class="caption"><i class="icon-info"></i> Risk Issues Register</div>
+
+          </div>
+          <div class="portlet-body">
+            <table class="table table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th>Risk Description</th>
+                  <th>Impact Description</th>
+                  <th>Likiliho</th>
+                  <th>Cost</th>
+                  <th>Time</th>
+                  <th>Rating</th>
+                  <th>Migration</th>
+                  <th>Assign to deliverable or Activity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Rock Encounter</td>
+                  <td>Unable to extract rock without plan</td>
+                  <td>Issue</td>
+                  <td>$6000</td>
+                  <td>3d</td>
+                  <td>Low</td>
+                  <td>Accept</td>
+                  <td>
+                    <ol>
+                      <li>Build House</li>
+                      <li>Foudnation
+                        <ol>
+                          <li>Clear Land</li>
+                          <li>Mark Foundation</li>
+                        </ol>
+                      </li>
+                      <li>List Item</li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Rock Encounter</td>
+                  <td>Unable to extract rock without plan</td>
+                  <td>Issue</td>
+                  <td>$6000</td>
+                  <td>3d</td>
+                  <td>Low</td>
+                  <td>Accept</td>
+                  <td>
+                    <ol>
+                      <li>Build House</li>
+                      <li>Foudnation
+                        <ol>
+                          <li>Clear Land</li>
+                          <li>Mark Foundation</li>
+                        </ol>
+                      </li>
+                      <li>List Item</li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Rock Encounter</td>
+                  <td>Unable to extract rock without plan</td>
+                  <td>Issue</td>
+                  <td>$6000</td>
+                  <td>3d</td>
+                  <td>Low</td>
+                  <td>Accept</td>
+                  <td>
+                    <ol>
+                      <li>Build House</li>
+                      <li>Foudnation
+                        <ol>
+                          <li>Clear Land</li>
+                          <li>Mark Foundation</li>
+                        </ol>
+                      </li>
+                      <li>List Item</li>
+                    </ol>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="portlet box green ">
+          <div class="portlet-title">
+            <div class="caption">
+              <i class="icon-upload"></i> Upload New Document
+            </div>
+
+          </div>
+          <div class="portlet-body form">
+            <form class="form-horizontal dashboard-upload-doc" role="form">
+              <div class="form-body">
+                <div class="form-group">
+                  <div class="col-sm-4">
+                    <div class="preview"></div>
+                  </div>
+                  <div class="col-sm-8">
+                    <label class="checkbox">
+                      <input type="radio" name="radio-11"> Project Document
+                    </label>
+                    <label class="checkbox">
+                      <input type="radio" name="radio-11"> Deliverable
+                    </label>
+                    <label class="checkbox">
+                      <input type="radio" name="radio-11"> Quality Edvince
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-actions">
+                <div class="col-md-7">
+                  <select class="form-control"><option>Assign to Task/ Scope</option></select>
+                </div>
+                <button type="submit" class="btn green pull-right">Upload</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
     <!-- END PAGE CONTENT-->

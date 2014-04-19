@@ -23,7 +23,7 @@
       <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
 
 
-      <li >
+      <li class="active">
         <a href="javascript:;">
           <i class="icon-cog"></i>
           <span class="title">Stackholders</span>
@@ -197,45 +197,65 @@
           </li>
           <li><a href="#">Project Name</a></li>
         </ul>
-        <!-- END PAGE TITLE & BREADCRUMB-->
-        <div class="text-left">
-          <h4>Project Manager: <a href="#">Chris O'Hara</a></h4>
-        </div>
-        <hr>
-        <form class="form-horizontal">
-          <div class="form-group">
-            <div class="col-sm-3">
-              <input class="form-control" placeholder="Project Name" type="text">
-            </div>
-            <div class="col-sm-4">
-              <label class="checkbox-inline">
-                <input type="checkbox" type="text"> Are you project manager?
-              </label>
-            </div>
-            <div class="col-sm-2 col-sm-offset-3">
-              <select class="form-control"><option>Project Manager</option></select>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-sm-3">
-              <input class="form-control" placeholder="Project Sponsor" type="text">
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-sm-3">
-              <select class="form-control"><option>Project Category</option></select>
-            </div>
-          </div>
-          <hr>
-          <h3>Project purpose or justification</h3>
-          <textarea class="ckeditor form-control" name="editor2" rows="4"></textarea>
-          <hr>
-          <h3>Statement of work</h3>
-          <textarea class="ckeditor form-control" name="editor1" rows="4"></textarea>
-          <hr>
-          <p class="form-actions">
-            <a href="#" class="btn yellow pull-right">Next</a>
-          </p>
+        <table class="table table-stackeholder">
+          <thead>
+            <tr>
+              <th colspan="4"></th>
+              <th colspan="2" class="text-right">Is approved?</th>
+              <th colspan="1" class="text-right">Comms</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="text" class="form-control" value="John"></td>
+              <td><input type="text" class="form-control" value="Doe"></td>
+              <td><input type="text" class="form-control" value="john.d@mail.com"></td>
+              <td><input type="text" class="form-control" value="123 456 7890"></td>
+              <td><select class="form-control"><option>Key User</option></select></td>
+              <td><input type="checkbox"></td>
+              <td><input type="text" class="form-control" value="" placeholder="Email"></td>
+              <td><a href="#">Invite</a></td>
+              <td><a href="#"><i class="icon-trash"></i></a></td>
+            </tr>
+            <tr>
+              <td><input type="text" class="form-control" value="John"></td>
+              <td><input type="text" class="form-control" value="Doe"></td>
+              <td><input type="text" class="form-control" value="john.d@mail.com"></td>
+              <td><input type="text" class="form-control" value="123 456 7890"></td>
+              <td><select class="form-control"><option>Key User</option></select></td>
+              <td><input type="checkbox"></td>
+              <td><input type="text" class="form-control" value="" placeholder="Email"></td>
+              <td><a href="#">Invite</a></td>
+              <td><a href="#"><i class="icon-trash"></i></a></td>
+            </tr>
+            <tr>
+              <td><input type="text" class="form-control" value="John"></td>
+              <td><input type="text" class="form-control" value="Doe"></td>
+              <td><input type="text" class="form-control" value="john.d@mail.com"></td>
+              <td><input type="text" class="form-control" value="123 456 7890"></td>
+              <td><select class="form-control"><option>Key User</option></select></td>
+              <td><input type="checkbox"></td>
+              <td><input type="text" class="form-control" value="" placeholder="Email"></td>
+              <td><a href="#">Invite</a></td>
+              <td><a href="#"><i class="icon-trash"></i></a></td>
+            </tr>
+            <tr>
+              <td><input type="text" class="form-control" value="John"></td>
+              <td><input type="text" class="form-control" value="Doe"></td>
+              <td><input type="text" class="form-control" value="john.d@mail.com"></td>
+              <td><input type="text" class="form-control" value="123 456 7890"></td>
+              <td><select class="form-control"><option>Key User</option></select></td>
+              <td><input type="checkbox"></td>
+              <td><input type="text" class="form-control" value="" placeholder="Email"></td>
+              <td><a href="#">Invite</a></td>
+              <td><a href="#"><i class="icon-trash"></i></a></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="form-actions">
+          <a href="#" class="btn yellow"><i class="icon-plus"></i> Add New</a>
+        </p>
         </form>
       </div>
     </div>
