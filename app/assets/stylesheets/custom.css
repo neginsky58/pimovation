@@ -45,6 +45,18 @@
 
 .project-list-btn {
   margin: 20px;
+  display: block;
+}
+
+.project-list-btn.btn-group .btn.yellow.dropdown-toggle {
+  float: none;
+  display: block;
+  width: 100%;
+}
+
+.project-list-btn.btn-group .dropdown-menu {
+  float: none;
+  width: 100%;
 }
 
 .header .hor-menu .hor-menu-search-form-toggler {
@@ -98,10 +110,57 @@
 .portlet-body ul {}
 .portlet-body ul li {
   border-bottom: 1px dotted #ddd;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 .portlet-body ul li:last-child {
   border: 0;
 }
 
+.fileupload {
+  margin-right: 20px;
+}
+
+.sidebar-actions {
+  padding: 20px;
+}
+
+.sidebar-actions h3 {
+  margin-top: 0;
+}
+
+.sidebar-actions .project-status {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 300;
+  padding: 15px 0;
+}
+.sidebar-actions .project-status.red {
+  background: #bb2413;
+  color: #fff;
+}
+.sidebar-actions .list-btn {
+  padding: 0;
+}
+.sidebar-actions .list-btn li {
+  display: block;
+  margin: 10px 0;
+}
+.sidebar-actions .list-btn li a {
+  display: block;
+}
+
+.sidebar-actions.white {
+  background: #fff;
+  margin: 10px;
+}
+
+.box {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+}
+
+.box.gray {
+  background: #ccc;
+
+}
