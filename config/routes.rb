@@ -14,6 +14,8 @@ Pimovation::Application.routes.draw do
       get :welcome
       get :project_detail
       get :stackholder
+      get :project_charter
+      get :canvas
     end
   end
   # Example of regular route:

@@ -94,3 +94,14 @@
 .table-stackeholder tr > td {
   vertical-align: middle;
 }
+
+.portlet-body ul {}
+.portlet-body ul li {
+  border-bottom: 1px dotted #ddd;
+  padding: 15px 0;
+}
+
+.portlet-body ul li:last-child {
+  border: 0;
+}
+
