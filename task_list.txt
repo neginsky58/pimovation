@@ -1,0 +1,58 @@
+
+18th Apr 2014 Tasks
+==
+1) Layout 
+  Should be consist of Header, Left panel, Right contents, Footer.
+
+  - Header 
+
+    Contain right menu(Profile, Dashboard, Account, Report, Logout)
+    Contain like such as New Project, Help, 
+    Contain project list dropdown box as link 
+
+  - Left pannel ( White color background )
+    
+    Stackholders
+    Scope
+    Time/Schedule
+    Resources
+    Quality
+    Procurement
+    Communications
+    Risk
+
+  - Right
+    Project Title, Project Manager Dropdown as Title 
+    Breadcumb
+    Content
+
+  - Footer
+2) Profile Page
+  Refer to the app.box.com
+
+3) First Page ( if there is no project )  
+  - Text ( No project yet )
+  - Button "Create New Project","Continue without Creating"
+
+4) Create Project Page
+  Refer to the app.box.com and exclude stackholders section. 
+
+5) Stackeholders page
+  Refer to the box.com
+  Display existing stackeholders, approval status per each stackeholder
+  Should be able to add/edit/delete stackholder, and should be able to invite
+
+6) Scope page
+  Display task list
+  Add/Delete task
+  Refer to box.com
+
+7) Communication Page
+  Refer to box.com
+
+8) Quality Page
+  Refer to box.com
+
+9) Resource Page
+  Refer to box.com
+
