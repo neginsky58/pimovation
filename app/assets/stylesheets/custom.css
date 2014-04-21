@@ -164,3 +164,58 @@
   background: #ccc;
 
 }
+
+/* Login Page */
+.login-wrap {
+  width: 300px;
+  margin: 100px auto;
+  box-shadow: 0 3px 0 rgba(0,0,0,.2);
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.login-wrap .input-group {
+  margin-bottom: 20px;
+}
+
+.login-wrap .input-group .input-group-addon {}
+
+.login-wrap .checkbox-inline {
+  margin: 0;
+  padding: 0;
+}
+
+.login-wrap button[type=submit] {
+  width: 100%;
+}
+
+/* User List */
+.tbl-user {}
+.tbl-user h4 {
+  margin: 0;
+}
+
+.tbl-user p {
+  margin: 5px 0;
+}
+
+.user-detail-box,
+.project-list-items {}
+.user-detail-box p,
+.project-list-items p {
+  padding: 10px 0;
+  margin: 0;
+  border-bottom: 1px dotted #ddd;
+}
+.user-detail-box p:last-child,
+.project-list-items p:last-child  {
+  border: 0;
+}
+
+.user-detail-box p strong,
+.project-list-items p strong {
+  font-weight: 400;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
