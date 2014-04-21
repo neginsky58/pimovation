@@ -107,10 +107,13 @@
   vertical-align: middle;
 }
 
-.portlet-body ul {}
+.portlet-body ul {
+  padding: 0 20px;
+}
 .portlet-body ul li {
   border-bottom: 1px dotted #ddd;
-  padding: 10px 0;
+  padding: 7px 0;
+  list-style: none;
 }
 
 .portlet-body ul li:last-child {
@@ -169,16 +172,24 @@
 .login-wrap {
   width: 300px;
   margin: 100px auto;
-  box-shadow: 0 3px 0 rgba(0,0,0,.2);
   padding: 20px;
-  border: 1px solid #ddd;
+  background: #eca22e;
+  color: #fff;
+}
+
+.login-wrap a,
+.login-wrap .page-title {
+  color: #fff;
 }
 
 .login-wrap .input-group {
   margin-bottom: 20px;
 }
 
-.login-wrap .input-group .input-group-addon {}
+.login-wrap .input-group .input-group-addon i{
+  width: 16px;
+  text-align: center;
+}
 
 .login-wrap .checkbox-inline {
   margin: 0;
