@@ -23,6 +23,7 @@ class ProjectsController < ApplicationController
 
   def stakeholders
     project_id = params[:project_id]
+    @project = Project.find_by_id(project_id)
     
   end
 
