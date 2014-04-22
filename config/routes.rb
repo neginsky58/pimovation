@@ -23,6 +23,7 @@ Pimovation::Application.routes.draw do
       get :user_details
       get :project_details
       get :admin_login
+      get :freemium
     end
   end
   
