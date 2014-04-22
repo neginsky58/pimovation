@@ -1,0 +1,106 @@
+<div class="clearfix"></div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container" >
+  <!-- BEGIN HORIZONTAL MENU PAGE SIDEBAR1 -->
+
+  <%= render 'layouts/left' %>
+
+  <!-- END BEGIN HORIZONTAL MENU PAGE SIDEBAR -->
+  <!-- BEGIN PAGE -->
+  <div class="page-content">
+    <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+    <div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+            <h4 class="modal-title">Modal title</h4>
+          </div>
+          <div class="modal-body">
+              Widget settings form goes here
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn blue">Save changes</button>
+            <button type="button" class="btn default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <!-- BEGIN PAGE HEADER-->
+    <div class="row">
+      <div class="col-md-12">
+        <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+        <h3 class="page-title">
+            Project Name <br><small>Project Descriptions</small>
+        </h3>
+        <ul class="page-breadcrumb breadcrumb">
+
+          <li>
+            <i class="icon-home"></i>
+            <a href="index.html">Dashboard</a>
+            <i class="icon-angle-right"></i>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+            <i class="icon-angle-right"></i>
+          </li>
+          <li><a href="#">Project Name</a></li>
+        </ul>
+        <table class="table table-stackeholder">
+          <thead>
+            <tr>
+              <th colspan="4"></th>
+              <th colspan="2" class="text-right">Is approved?</th>
+              <th colspan="1" class="text-right">Comms</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="text" class="form-control" value="John"></td>
+              <td><input type="text" class="form-control" value="Doe"></td>
+              <td><input type="text" class="form-control" value="john.d@mail.com"></td>
+              <td><input type="text" class="form-control" value="123 456 7890"></td>
+              <td><select class="form-control"><option>Key User</option></select></td>
+              <td><div class="approver-checkbox"><input type="checkbox" /></div></td>
+              <td><input type="text" class="form-control" value="" placeholder="Email"></td>
+              <td><a href="#">Invite</a></td>
+              <td><a href="#"><i class="icon-trash"></i></a></td>
+            </tr>
+            <tr>
+              <td><input type="text" class="form-control" value="John"></td>
+              <td><input type="text" class="form-control" value="Doe"></td>
+              <td><input type="text" class="form-control" value="john.d@mail.com"></td>
+              <td><input type="text" class="form-control" value="123 456 7890"></td>
+              <td><select class="form-control"><option>Key User</option></select></td>
+              <td><input type="checkbox"></td>
+              <td><input type="text" class="form-control" value="" placeholder="Email"></td>
+              <td><a href="#">Invite</a></td>
+              <td><a href="#"><i class="icon-trash"></i></a></td>
+            </tr>
+            
+          </tbody>
+
+        </table>
+        <div class="col-md-12">
+          <a href="#" class="btn yellow"><i class="icon-plus"></i> Add New</a>
+        </div>
+        
+        <p class="form-actions">            
+          <a href="#" class="btn blue pull-right"><i class="icon-circle-arrow-right"></i> Next</a>
+        </p>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- END PAGE CONTENT-->
+</div>
+<!-- END PAGE -->
+</div>
+<!-- END CONTAINER -->

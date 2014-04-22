@@ -180,3 +180,9 @@ ProjectRoleAccess.find_or_create_by(project_role_id: role_7.id, access_type_id: 
 ProjectRoleAccess.find_or_create_by(project_role_id: role_7.id, access_type_id: at12.id)
 ProjectRoleAccess.find_or_create_by(project_role_id: role_7.id, access_type_id: at13.id)
 
+
+## Project Categories
+Category.find_or_create_by(title: 'Construction')
+Category.find_or_create_by(title: 'IT')
+Category.find_or_create_by(title: 'Business')
+

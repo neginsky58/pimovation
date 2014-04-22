@@ -202,17 +202,17 @@
           <h4>Project Manager: <a href="#">Chris O'Hara</a></h4>
         </div>
         <hr>
-        <form class="form-horizontal">
+        <%= form_for(@project, html: { class: 'form-horizontal' }) do |f| %>        
           <div class="form-group">
             <div class="col-sm-3">
-              <input class="form-control" placeholder="Project Name" type="text">
+              <%= f.text_field :title, class: 'form-control', placeholder: 'Project Name' %>              
             </div>
             <div class="col-sm-4">
-              <label class="checkbox-inline">
+              <label class="checkbox-inline">                
                 <input type="checkbox" type="text"> Are you project manager?
               </label>
             </div>
-            <div class="col-sm-2 col-sm-offset-3">
+            <div class="col-sm-2 col-sm-offset-3">              
               <select class="form-control"><option>Project Manager</option></select>
             </div>
           </div>
@@ -221,23 +221,22 @@
               <input class="form-control" placeholder="Project Sponsor" type="text">
             </div>
           </div>
-          
           <div class="form-group">
             <div class="col-sm-3">
-              <select class="form-control"><option>Project Category</option></select>
+              <%= f.select :category_id, options_from_collection_for_select(@categories, :id, :title, @project.category_id), {:include_blank => 'Select Category' }, {:class=> 'form-control'} %>              
             </div>
           </div>
-          
+          <hr>
           <h3>Project purpose or justification</h3>
-          <textarea class=" form-control" name="editor2" rows="4"></textarea>
-          
+          <%= f.text_area :purpose, class: 'form-control', rows: 4 %>
+          <hr>
           <h3>Statement of work</h3>
-          <textarea class=" form-control" name="editor1" rows="4"></textarea>
-          
-          <p class="form-actions">            
-            <button href="#" class="btn blue pull-right"><i class="icon-circle-arrow-right"></i> Next</button>
+          <%= f.text_area :statement_of_work, class: 'form-control', rows: 4 %>          
+          <hr>
+          <p class="form-actions">
+            <%= f.submit 'Next', class: 'btn yellow pull-right' %>            
           </p>
-        </form>
+        <% end %>
       </div>
     </div>
 

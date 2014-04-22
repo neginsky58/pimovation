@@ -52,7 +52,8 @@
     </div>
     <!-- END PAGE HEADER-->
     <!-- BEGIN PAGE CONTENT-->
-    <form class="form-horizontal">
+    
+    <%= form_for(@profile, url: update_profile_users_url, method: 'post', html: { class: 'form-horizontal' }) do |f| %>
       <div class="row">
         <div class="media profile col-sm-6">
 
@@ -73,21 +74,31 @@
             </div>
           </div>
           <div class="media-body">
-            <h4 class="media-heading">John Doe</h4>
+            
             <p>Project Manager</p>
+            
+            <div class="form-group">
+              <div class="col-sm-4">
+                <%= f.text_field :first_name, class: 'form-control', placeholder: 'First Name' %>
+              </div>
+              <div class="col-sm-4">
+                <%= f.text_field :last_name, class: 'form-control', placeholder: 'Last Name'  %>
+              </div>
+            </div>
+
             <div class="form-group">
               <div class="col-sm-8">
-                <input type="text" value="john.d@mail.com" class="form-control">
+                <%= email_field_tag :mobile, current_user.email, placeholder: 'Email', class: 'form-control' %>                
               </div>
             </div>
             <div class="form-group">
               <div class="col-sm-8">
-                <input type="text" value="123 456 7890" class="form-control">
+                <%= f.text_field :mobile, class: 'form-control', placeholder: 'Mobile #' %>                
               </div>
             </div>
             <div class="form-group">
               <div class="col-sm-8">
-                <input type="text" value="123 456 7890" class="form-control">
+                <%= f.text_field :phone, class: 'form-control', placeholder: 'Phone' %>
               </div>
             </div>
           </div>
@@ -109,13 +120,7 @@
           </div>
           <div class="form-group">
             <div class="col-sm-8">
-              <select class="form-control">
-                <option>Project Communication Preferences</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
+              <%= f.select :communication_preference_id, options_from_collection_for_select(@com_preferences, :id, :name, @profile.communication_preference_id), {}, {:class=> 'form-control'} %>              
             </div>
           </div>
         </div>
@@ -152,9 +157,9 @@
       <p class="form-actions text-right clearfix">
         <a href="#" class="pull-left">Click here to purchase more in-app purchase modules!</a>
         <a href="#" class="btn dark">Cancel</a>
-        <a href="#" class="btn yellow">Done</a>
+        <%= submit_tag 'Update', class: 'btn yellow' %>                
       </p>
-    </form>
+    <% end %>
     <!-- END PAGE CONTENT-->
   </div>
   <!-- END PAGE -->

@@ -33,6 +33,14 @@ Pimovation::Application.routes.draw do
     end
   end
 
+  resources :projects do 
+    get 'stakeholders'
+    
+    collection do  
+    end
+  end
+
+  #get 'stakeholders/:project_id', to: 'projects#stakeholders', as: 'stakeholders'
 
 
 end

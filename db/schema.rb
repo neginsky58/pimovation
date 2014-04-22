@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140422115420) do
+ActiveRecord::Schema.define(version: 20140422173834) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,13 @@ ActiveRecord::Schema.define(version: 20140422115420) do
     t.integer  "user_id"
     t.string   "token"
     t.string   "status"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "categories", force: true do |t|
+    t.string   "title"
+    t.text     "desc"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -107,6 +114,8 @@ ActiveRecord::Schema.define(version: 20140422115420) do
     t.text     "statement_of_work"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "category_id"
+    t.integer  "manager_id"
   end
 
   create_table "qualities", force: true do |t|
@@ -136,6 +145,9 @@ ActiveRecord::Schema.define(version: 20140422115420) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
+    t.string   "mobile"
+    t.string   "phone"
+    t.integer  "communication_preference_id"
   end
 
   create_table "user_types", force: true do |t|
@@ -161,8 +173,6 @@ ActiveRecord::Schema.define(version: 20140422115420) do
     t.datetime "updated_at"
     t.string   "api_secret_key"
     t.string   "api_public_token"
-    t.string   "mobile"
-    t.string   "phone"
     t.integer  "user_type_id"
     t.string   "stripe_id"
     t.string   "plan_id"
