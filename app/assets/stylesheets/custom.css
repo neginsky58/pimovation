@@ -45,6 +45,18 @@
 
 .project-list-btn {
   margin: 20px;
+  display: block;
+}
+
+.project-list-btn.btn-group .btn.yellow.dropdown-toggle {
+  float: none;
+  display: block;
+  width: 100%;
+}
+
+.project-list-btn.btn-group .dropdown-menu {
+  float: none;
+  width: 100%;
 }
 
 .header .hor-menu .hor-menu-search-form-toggler {
@@ -94,3 +106,127 @@
 .table-stackeholder tr > td {
   vertical-align: middle;
 }
+
+.portlet-body ul {
+  padding: 0 20px;
+}
+.portlet-body ul li {
+  border-bottom: 1px dotted #ddd;
+  padding: 7px 0;
+  list-style: none;
+}
+
+.portlet-body ul li:last-child {
+  border: 0;
+}
+
+.fileupload {
+  margin-right: 20px;
+}
+
+.sidebar-actions {
+  padding: 20px;
+}
+
+.sidebar-actions h3 {
+  margin-top: 0;
+}
+
+.sidebar-actions .project-status {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 300;
+  padding: 15px 0;
+}
+.sidebar-actions .project-status.red {
+  background: #bb2413;
+  color: #fff;
+}
+.sidebar-actions .list-btn {
+  padding: 0;
+}
+.sidebar-actions .list-btn li {
+  display: block;
+  margin: 10px 0;
+}
+.sidebar-actions .list-btn li a {
+  display: block;
+}
+
+.sidebar-actions.white {
+  background: #fff;
+  margin: 10px;
+}
+
+.box {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+}
+
+.box.gray {
+  background: #ccc;
+
+}
+
+/* Login Page */
+.login-wrap {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background: #eca22e;
+  color: #fff;
+}
+
+.login-wrap a,
+.login-wrap .page-title {
+  color: #fff;
+}
+
+.login-wrap .input-group {
+  margin-bottom: 20px;
+}
+
+.login-wrap .input-group .input-group-addon i{
+  width: 16px;
+  text-align: center;
+}
+
+.login-wrap .checkbox-inline {
+  margin: 0;
+  padding: 0;
+}
+
+.login-wrap button[type=submit] {
+  width: 100%;
+}
+
+/* User List */
+.tbl-user {}
+.tbl-user h4 {
+  margin: 0;
+}
+
+.tbl-user p {
+  margin: 5px 0;
+}
+
+.user-detail-box,
+.project-list-items {}
+.user-detail-box p,
+.project-list-items p {
+  padding: 10px 0;
+  margin: 0;
+  border-bottom: 1px dotted #ddd;
+}
+.user-detail-box p:last-child,
+.project-list-items p:last-child  {
+  border: 0;
+}
+
+.user-detail-box p strong,
+.project-list-items p strong {
+  font-weight: 400;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
