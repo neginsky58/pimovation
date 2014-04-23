@@ -249,10 +249,12 @@
 .col_20 {
   width: 20%;
   float: left;
+  padding: 1px;
 }
 .col_50 {
   width: 50%;
   float: left;
+  padding: 1px;
 }
 
 .grid {
