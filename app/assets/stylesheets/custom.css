@@ -388,7 +388,9 @@
 
 .page-canvas {}
 
-.page-canvas .portlet-title {}
+.page-canvas .portlet.box > .portlet-title {
+  padding: 15px 10px 10px 10px;
+}
 
 .page-canvas .portlet-title .caption {
   color: #444;
@@ -412,13 +414,30 @@
   background: #fff;
   position: relative;
   padding-bottom: 60px;
+  margin: 5px -10px;
+  border: 0;
 }
 
-.page-canvas .col-sm-8 .portlet {
-  min-height: 450px;
+.page-canvas .col-sm-4 .portlet{
+  margin-bottom: 10px;
 }
 
-.page-canvas .col-sm-4 .box.portlet {
-  min-height: 290px;
+.page-canvas .portlet-body {
+  height: 205px;
+  overflow: auto;
 }
+
+.page-canvas .portlet-body .alert-dismissable .close {
+  top: 5px;
+  right: 0;
+}
+
+.page-canvas .row.canvas-items {
+  padding: 0 10px;
+}
+
+.header .hor-menu ul.nav li a {
+  padding: 11px 10px;
+}
+
 
