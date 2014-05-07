@@ -249,19 +249,16 @@
 .col_20 {
   width: 20%;
   float: left;
-  padding: 1px;
 }
 .col_50 {
   width: 50%;
   float: left;
-  padding: 1px;
 }
 
 .grid {
   height: 200px;
   position: relative;
   padding: 20px;
-  border: 1px solid #ddd;
 }
 
 
@@ -289,7 +286,7 @@
    width: 100%;
    height: 200px;
     position: relative;
-    margin: 2px;
+    border: 2px solid #fff;
 }
 .flip .card.flipped {
   -webkit-transform: rotatey(-180deg);
@@ -318,22 +315,23 @@
 .flip .card .front {
   position: absolute;
   z-index: 1;
-    background: #FDA930;
-    color: #fff;
+    background: #F6E1AE;
+    color: #333;
     cursor: pointer;
 }
 .flip .card .back {
   -webkit-transform: rotatey(-180deg);
   -moz-transform: rotatey(-180deg);
   transform: rotatey(-180deg);
-    background: #F6E1AE;
-    color: #333;
+    background: #FDA930;
     cursor: pointer;
+    color: #fff;
 }
 
 .card-title {
   text-transform: uppercase;
   margin: 10px;
+  font-weight: 400 !important;
 }
 .card-body {
   margin: 10px;
@@ -372,14 +370,55 @@
 }
 
 .social_follow a {
-  padding: 0 5px;
+  border: 2px solid;
+  padding: 5px;
+  margin: 0 10px;
+  border-radius: 25px !important;
+  font-size: 14px;
 }
 
 .social_follow a:hover {
-
+  text-decoration: none;
+  background: rgba(255,255,255,.5);
 }
 
 .flip.grid_2x {
-  height: 402px;
+  height: 400px;
+}
+
+.page-canvas {}
+
+.page-canvas .portlet-title {}
+
+.page-canvas .portlet-title .caption {
+  color: #444;
+}
+
+.page-canvas .portlet-footer {
+  padding: 10px 20px;
+  min-height: 60px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.page-canvas .portlet-footer .collapse {
+  display: none;
+}
+
+.page-canvas .portlet{
+  background: #fff;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.page-canvas .col-sm-8 .portlet {
+  min-height: 450px;
+}
+
+.page-canvas .col-sm-4 .box.portlet {
+  min-height: 290px;
 }
 
