@@ -404,6 +404,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  z-index: 1010;
 }
 
 .page-canvas .portlet-footer .collapse {
@@ -423,8 +424,11 @@
 }
 
 .page-canvas .portlet-body {
+  overflow: hidden;
+}
+
+.page-canvas .portlet-body .scroller {
   height: 205px;
-  overflow: auto;
 }
 
 .page-canvas .portlet-body .alert-dismissable .close {
