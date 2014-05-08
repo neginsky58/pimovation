@@ -423,7 +423,7 @@
   margin-bottom: 10px;
 }
 
-.page-canvas .portlet-body {
+.page-canvas .portlet.box > .portlet-body {
   overflow: hidden;
   padding-bottom: 50px;
 }
