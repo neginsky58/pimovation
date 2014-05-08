@@ -425,10 +425,12 @@
 
 .page-canvas .portlet-body {
   overflow: hidden;
+  padding-bottom: 50px;
 }
 
 .page-canvas .portlet-body .scroller {
   height: 205px;
+  overflow: auto;
 }
 
 .page-canvas .portlet-body .alert-dismissable .close {
