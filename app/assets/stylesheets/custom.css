@@ -285,6 +285,7 @@
   perspective: 800;
    width: 100%;
    height: 200px;
+   overflow: auto;
     position: relative;
     border: 2px solid #fff;
 }
@@ -323,9 +324,9 @@
   -webkit-transform: rotatey(-180deg);
   -moz-transform: rotatey(-180deg);
   transform: rotatey(-180deg);
-    background: #FDA930;
-    cursor: pointer;
-    color: #fff;
+  background: #FDA930;
+  cursor: pointer;
+  color: #fff;
 }
 
 .card-title {
@@ -335,11 +336,27 @@
 }
 .card-body {
   margin: 10px;
+  padding-bottom: 50px;
+  position: relative;
 }
+
 
 .card .swap {
   position: absolute;
   bottom: 10px;
+  right: 10px;
+}
+
+.card .add {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.card .card-action {
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
   right: 10px;
 }
 
@@ -372,9 +389,10 @@
 .social_follow a {
   border: 2px solid;
   padding: 5px;
-  margin: 0 10px;
+  margin: 10px;
   border-radius: 25px !important;
   font-size: 14px;
+  display: inline-block;
 }
 
 .social_follow a:hover {
@@ -446,4 +464,23 @@
   padding: 11px 10px;
 }
 
+@media (min-width: 768px) and (max-width: 979px) {
+  .col_20 {
+    width: 33.3%;
+  }
+
+  .col_50 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .col_20, .col_50 {
+    width: 100%;
+  }
+
+  .flip.grid_2x{
+    height: 200px;
+  }
+}
 

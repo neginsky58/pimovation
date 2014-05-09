@@ -139,6 +139,11 @@
         App.init();
         FormComponents.init();
         FormEditable.init();
+        $('.date-picker').datepicker({
+          rtl: App.isRTL(),
+          autoclose: true
+        });
+
       });
     </script>
     <script type="text/javascript">
