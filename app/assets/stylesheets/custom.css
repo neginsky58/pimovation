@@ -107,16 +107,36 @@
   vertical-align: middle;
 }
 
-.portlet-body ul {
+.portlet-body ul,
+.card ul {
   padding: 0 20px;
 }
-.portlet-body ul li {
+
+.card ul {
+  padding: 0;
+}
+
+.card ul .alert-dismissable .close {
+  top: 2px;
+  right: 0;
+}
+.portlet-body ul li,
+.card ul li {
   border-bottom: 1px dotted #ddd;
   padding: 7px 0;
   list-style: none;
 }
 
-.portlet-body ul li:last-child {
+.page-content-unloggin .card a {
+  color: #555;
+}
+
+.page-content-unloggin .card a:hover {
+  color: #eca22e;
+}
+
+.portlet-body ul li:last-child,
+.card ul li:last-child {
   border: 0;
 }
 
@@ -283,11 +303,10 @@
   -webkit-perspective: 800;
   -moz-perspective: 800;
   perspective: 800;
-   width: 100%;
-   height: 200px;
-   overflow: auto;
-    position: relative;
-    border: 2px solid #fff;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  border: 2px solid #eee;
 }
 .flip .card.flipped {
   -webkit-transform: rotatey(-180deg);
@@ -316,9 +335,9 @@
 .flip .card .front {
   position: absolute;
   z-index: 1;
-    background: #F6E1AE;
-    color: #333;
-    cursor: pointer;
+  background: #F6E1AE;
+  color: #333;
+  cursor: pointer;
 }
 .flip .card .back {
   -webkit-transform: rotatey(-180deg);
@@ -330,14 +349,26 @@
 }
 
 .card-title {
-  text-transform: uppercase;
+  text-transform: none;
   margin: 10px;
-  font-weight: 400 !important;
+  font-weight: 700 !important;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  line-height: 24px;
 }
 .card-body {
   margin: 10px;
   padding-bottom: 50px;
   position: relative;
+}
+
+.flip .scroller {
+  height: 90px;
+}
+
+.flip.grid_2x .scroller {
+  height: 290px;
 }
 
 
@@ -348,16 +379,25 @@
 }
 
 .card .add {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
+  font-size: 11px;
+  padding: 5px;
+  color: #333;
 }
 
 .card .card-action {
   position: absolute;
-  bottom: 50px;
-  left: 10px;
-  right: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #eee;
+  padding: 0;
+  border-top: 1px solid #ddd;
+}
+
+.card .card-action .in,
+.card .card-action .collapsing {
+  padding: 10px;
 }
 
 .card .swap,
