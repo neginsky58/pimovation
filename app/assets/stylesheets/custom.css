@@ -135,6 +135,11 @@
   color: #eca22e;
 }
 
+.page-content-unloggin .card .front a.swap:hover,
+.page-content-unloggin .card .back a.swap:hover {
+  color: #fff;
+}
+
 .portlet-body ul li:last-child,
 .card ul li:last-child {
   border: 0;
@@ -303,10 +308,10 @@
   -webkit-perspective: 800;
   -moz-perspective: 800;
   perspective: 800;
-  width: 100%;
-  height: 200px;
-  position: relative;
-  border: 2px solid #eee;
+   width: 100%;
+   height: 200px;
+    position: relative;
+    border: 2px solid #eee;
 }
 .flip .card.flipped {
   -webkit-transform: rotatey(-180deg);
@@ -335,9 +340,9 @@
 .flip .card .front {
   position: absolute;
   z-index: 1;
-  background: #F6E1AE;
-  color: #333;
-  cursor: pointer;
+    background: #F8E7BE;
+    color: #333;
+    cursor: pointer;
 }
 .flip .card .back {
   -webkit-transform: rotatey(-180deg);
@@ -390,9 +395,8 @@
   left: 0;
   right: 0;
   z-index: 100;
-  background: #eee;
+  background: #cdbd96;
   padding: 0;
-  border-top: 1px solid #ddd;
 }
 
 .card .card-action .in,
