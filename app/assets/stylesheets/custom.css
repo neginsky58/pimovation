@@ -135,11 +135,6 @@
   color: #eca22e;
 }
 
-.page-content-unloggin .card .front a.swap:hover,
-.page-content-unloggin .card .back a.swap:hover {
-  color: #fff;
-}
-
 .portlet-body ul li:last-child,
 .card ul li:last-child {
   border: 0;
@@ -308,10 +303,10 @@
   -webkit-perspective: 800;
   -moz-perspective: 800;
   perspective: 800;
-   width: 100%;
-   height: 200px;
-    position: relative;
-    border: 2px solid #eee;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  border: 2px solid #eee;
 }
 .flip .card.flipped {
   -webkit-transform: rotatey(-180deg);
@@ -340,9 +335,9 @@
 .flip .card .front {
   position: absolute;
   z-index: 1;
-    background: #F8E7BE;
-    color: #333;
-    cursor: pointer;
+  background: #F6E1AE;
+  color: #333;
+  cursor: pointer;
 }
 .flip .card .back {
   -webkit-transform: rotatey(-180deg);
@@ -352,6 +347,7 @@
   cursor: pointer;
   color: #fff;
 }
+
 
 .card-title {
   text-transform: none;
@@ -395,8 +391,9 @@
   left: 0;
   right: 0;
   z-index: 100;
-  background: #cdbd96;
+  background: #eee;
   padding: 0;
+  border-top: 1px solid #ddd;
 }
 
 .card .card-action .in,
@@ -420,6 +417,11 @@
   background: rgba(0,0,0,.3);
   text-decoration: none;
   color: #fff;
+}
+
+.card .back .card-action {
+  background: #333;
+  border: 0;
 }
 
 .subcribtion-txt,
@@ -448,7 +450,8 @@
   height: 400px;
 }
 
-.page-canvas {}
+.page-canvas .page-content{
+}
 
 .page-canvas .portlet.box > .portlet-title {
   padding: 15px 10px 10px 10px;
@@ -478,7 +481,7 @@
   position: relative;
   padding-bottom: 60px;
   margin: 5px -10px;
-  border: 0;
+  border: 1px solid #E0E0E0;
 }
 
 .page-canvas .col-sm-4 .portlet{
@@ -507,7 +510,9 @@
 .header .hor-menu ul.nav li a {
   padding: 11px 10px;
 }
-
+.approval-content {
+  margin-top: 54px;
+}
 @media (min-width: 768px) and (max-width: 979px) {
   .col_20 {
     width: 33.3%;
@@ -527,4 +532,3 @@
     height: 200px;
   }
 }
-
