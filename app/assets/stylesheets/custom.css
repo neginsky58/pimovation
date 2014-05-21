@@ -420,7 +420,7 @@
 }
 
 .card .back .card-action {
-  background: #eee;
+  background: #333;
   border: 0;
 }
 
@@ -513,6 +513,22 @@
 .approval-content {
   margin-top: 54px;
 }
+
+.project-detail-box {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.charter-action {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.charter-action a.btn {
+  color: #fff;
+}
+
 @media (min-width: 768px) and (max-width: 979px) {
   .col_20 {
     width: 33.3%;

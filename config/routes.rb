@@ -24,6 +24,7 @@ Pimovation::Application.routes.draw do
       get :project_details
       get :admin_login
       get :freemium
+      get :charter
     end
   end
   
