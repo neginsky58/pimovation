@@ -1,0 +1,36 @@
+.page-header-fixed.page-html5-charter {
+  background: #fff !important;
+  padding-top: 70px !important;
+}
+
+.html5-charter-section-1 {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.project-info-header {
+  margin-bottom: 10px;
+}
+.project-name {}
+.project-cat {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.page-header-fixed.page-html5-charter .html5-charter-section-2 .portlet.box {
+
+}
+
+.page-header-fixed.page-html5-charter .html5-charter-section-2 .portlet.box > .portlet-body {
+  height: 170px;
+  overflow: auto;
+}
+
+.page-header-fixed.page-html5-charter .html5-charter-section-2 .portlet.box > .portlet-body .slimScrollDiv {
+}
+
+.page-actions {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
