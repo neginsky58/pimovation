@@ -25,6 +25,9 @@ Pimovation::Application.routes.draw do
       get :admin_login
       get :freemium
       get :charter
+      get :time_and_schedule
+      get :stakeholder_requirements
+      get :scope_and_wbs
     end
   end
   
